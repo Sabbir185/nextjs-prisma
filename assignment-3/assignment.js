@@ -295,3 +295,44 @@ image.addEventListener('mouseout', function() {
   image.src = 'original-image.jpg';
 });
 
+
+
+/**
+ * 
+ * HTML DOM Document
+ *  
+ */
+// 8.a answer:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage with Button and Paragraph</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="myParagraph">This is a paragraph element.</p>
+</body>
+</html>
+
+
+// 8.b answer:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage with Button and Paragraph</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="myParagraph">This is a paragraph element.</p>
+
+  <script>
+      const button = document.getElementById('myButton');
+      const paragraph = document.getElementById('myParagraph');
+
+      button.addEventListener('click', function() {
+        paragraph.textContent = 'Button Clicked!';
+      });
+
+  </script>
+</body>
+</html>
