@@ -267,5 +267,31 @@ getCurrentLocation();
  *  
  */
 // 7.a answer:
+document.addEventListener('click', function(event) {
+  const x = event.pageX;
+  const y = event.pageY;
+  alert('Coordinates (x, y): ' + x + ', ' + y);
+});
+
+
 // 7.b answer:
+document.addEventListener('keydown', function(event) {
+  const keyCode = event.keyCode || event.which;
+
+  alert('Key Code: ' + keyCode);
+});
+
+
 // 7.c answer:
+<img id="myImage" src="original-image.jpg" alt="Image" />
+
+const image = document.getElementById('myImage');
+
+image.addEventListener('mouseover', function() {
+  image.src = 'new-image.jpg';
+});
+
+image.addEventListener('mouseout', function() {
+  image.src = 'original-image.jpg';
+});
+
